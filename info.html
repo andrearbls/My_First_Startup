@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <title>Andrea Robles</title>
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="info.js"></script>
+</head>
+<body>
+    
+    <div class="header row">
+        <div class="logo-div column"><img src="./logo.png" class="logo" ></div>
+        <div ><h1 class="main-heading column">Andrea Robles's StartUP Website</h1></div>
+    </div>
+    <div class="row userinfo-center-div">
+        <div class="navigation info-nav column">
+            <ul>
+                <li><a  href="honesty.html">Honesty</a></li>
+                <li><a  class="active" href="info.html">User Info</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+              </ul>
+        </div>
+        <div class="user-info column">
+            <h3 class="signup-title">Sign Up</h3>
+            <form  id="validation" class="userinfo-form">
+                <div class="row form-group">
+                    <div class="column input-column form-group">
+                        <input type="text" id="fname" class="form-control" name="firstname" 
+                        placeholder="Your First name.." required>
+                      </div>
+                  <div class="column input-column">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column input-column">
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                  </div>
+                  <div class="column input-column">
+                    <input type="password" id="conf-password" name="confirmpassword" placeholder="Confirm Password" required>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="column input-column">
+                        <input type="text" id="username" name="username" placeholder="User name.." required>
+                      </div>
+                      <div class="column input-column">
+                        <input type="number" id="age" name="age" placeholder="Enter your age.." required >
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="column radio-input">
+                        <label class="container">Graduated
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                    <div class="column radio-input">
+                        <label class="container">Current enrolled
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                    <div class="column radio-input">
+                        <label class="container">Did not graduate
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="email" id="email" name="email" placeholder="Enter your email.." required>
+                </div>
+                <input type="hidden" name="lastName" id="lastName" value="Robles" />
+                <input type="hidden" name="studentId" id="studentId" value="072128127" />
+                <br>
+                <div class="row submit-button-div" id="">
+                  <input type="submit" id="submit-btn" value="submit">
+                </div>
+                </form>
+        </div>
+        <div class="Errors-pannel column" >
+            <div class="error" id="fnameerror"></div>
+            <div class="error" id="fnameerror"></div>
+            <div class="error" id="lnameerror"></div>
+            <div class="error" id="passworderror"></div>
+            <div class="error" id="confpassworderror"></div>
+            <div class="error" id="usernameerror"></div>
+            <div class="error" id="ageerror"></div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="column Designer-info">
+                <p>Designer and Owner: Andrea Robles
+                    <br>
+                    Email: aarobles@mysceneca.ca
+                </p>
+            </div>
+            <div class="column copyright">
+                Copyrights 2021-All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
